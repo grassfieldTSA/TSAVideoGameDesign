@@ -406,6 +406,12 @@ room_set_view(room_next(room),0,true, 0,0,TheWidth,TheHeight, 0,0,TheWidth,TheHe
     <instance objName="obj_wallParent" x="2112" y="992" name="inst_32469CD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wallParent" x="2144" y="992" name="inst_C2F00FB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_pause" x="416" y="192" name="inst_DA4B490C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_enemy1collsion" x="928" y="768" name="inst_2F4F8923" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_enemy1collsion" x="1568" y="768" name="inst_DD1EF6C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_enemy1" x="1088" y="768" name="inst_BD8AF707" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_enemy2" x="1856" y="928" name="inst_3B30EA6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_enemy2collision" x="1760" y="928" name="inst_8BF7AE0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_enemy2collision" x="2048" y="928" name="inst_3CA330A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

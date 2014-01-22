@@ -61,6 +61,9 @@ if(place_meeting(x,y+vspeed,object_canStandOn))
 //Makes sure player is only pressing one
 if(!(left && right))
 {
+    acceleration += 1/30;
+    if(acceleration>1)
+    acceleration = 1;
     if(left)
     {
     characterDirection = -1;
@@ -72,7 +75,7 @@ if(!(left && right))
         //    while(place_meeting(x-moveAmount,y+vspeed,object_box)) x+=1;
         }   
     
-    
+    moveAmount = moveAmount*acceleration;
         if(place_meeting(x-moveAmount,y+vspeed,obj_wallParent))
             while(!place_meeting(x-1,y+vspeed,obj_wallParent)) x-=1;
         else
@@ -97,7 +100,7 @@ if(!(left && right))
         moveAmount = 4;
         
         }  
-    
+    moveAmount = moveAmount*acceleration;
         if(place_meeting(x+moveAmount,y+vspeed,obj_wallParent))
             while(!place_meeting(x+1,y,obj_wallParent)) x+=1;
         else
@@ -114,7 +117,10 @@ if(!(left && right))
         }           
     }
 }
-
+if(!left && !right)
+{
+acceleration = 0;
+}
 
 //This will be where the mana bar recharges
 if(place_meeting(x,y+1,obj_wallParent))
